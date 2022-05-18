@@ -1,0 +1,61 @@
+<div class="pets-in-stock-card">
+  <h2 class="pets-title">Pets In Stock</h2>
+  <div class="in-stock-card">
+    <div class="pets-container">
+      <div class="container list-container">
+        <div class="row list-wrapper">
+          <div class="species-item col-12" (click)="onSelect(s)" *ngFor="let s of speciesList"
+
+               [ngClass]="{'selected': s.id == selected?.id}">
+            <span class="border-animation"></span>
+            <span class="border-animation"></span>
+            <span class="border-animation"></span>
+            <span class="border-animation"></span>
+            <span>{{s.name}}</span>
+            <mat-icon class="paw-icon" (click)="onDetailButton(s)" aria-hidden="false" color="warn">pets</mat-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card-middle">
+
+      <div class="img1 img-title">
+        monkey
+      </div>
+
+      <div class="img2 img-title">
+        dog
+      </div>
+
+      <div class="img3 img-title">
+        cat
+      </div>
+
+      <div class="img4 img-title">
+        lion
+      </div>
+
+      <div class="img5 img-title">
+        spider
+      </div>
+
+      <div class="img6 img-title">
+        pig
+      </div>
+
+      <div class="img7 img-title">
+        parrot
+      </div>
+
+      <div class="img8 img-title">
+        bat
+      </div>
+
+      <div class="img9 img-title">
+        mouse
+      </div>
+
+    </div>
+  </div>
+</div>

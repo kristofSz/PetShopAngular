@@ -1,0 +1,31 @@
+@import "~style/variables.scss";
+
+body {
+  //font-family: Montserrat, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 1350px;
+  background: #94D8EE;
+}
+
+@mixin css3-prefix($property, $value) {
+  -webkit-#{$property}: #{$value};
+  -khtml-#{$property}: #{$value};
+  -moz-#{$property}: #{$value};
+  -ms-#{$property}: #{$value};
+  -o-#{$property}: #{$value};
+  #{$property}: #{$value};
+}
+
+
+.ui.raised.segment{
+  border: none !important;
+  @include css3-prefix("box-shadow", "3px 3px 19px 0px rgba(50, 50, 50, 0.1) !important");
+}
+
+.overflow-ellipsis {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+

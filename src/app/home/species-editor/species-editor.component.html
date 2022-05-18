@@ -1,0 +1,34 @@
+<div class="container editor-container">
+
+  <div [formGroup]="form" class="row">
+    <div class="input-wrapper col-sm-12 col-md-4">
+      <input class="name-input input" type="text" placeholder="Enter species name"
+             formControlName="speciesName">
+    </div>
+
+    <div class="input-wrapper col-sm-12 col-md-4">
+      <input class="in-stock-input input" type="number" placeholder="Enter quantity"
+             formControlName="speciesInStock">
+    </div>
+
+    <div class="input-wrapper col-sm-12 col-md-4">
+      <div class="">
+        <label class="label-exotic input">Exotic</label>
+        <input type="checkbox" formControlName="speciesExotic">
+      </div>
+    </div>
+
+  </div>
+
+
+</div>
+
+<div class="buttons">
+  <div class="">
+    <button class="control-button" mat-raised-button color="primary" (click)="onSave()">Save</button>
+  </div>
+
+  <div class="">
+    <button class="control-button" mat-raised-button color="primary" (click)="onNew()">New</button>
+  </div>
+</div>

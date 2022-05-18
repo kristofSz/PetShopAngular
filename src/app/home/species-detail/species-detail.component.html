@@ -1,0 +1,9 @@
+<h1>{{selected.name}}</h1>
+<hr>
+<div class="user-card-container container">
+  <div class="row">
+    <div class="user-card col-sm-12 col-md-6" *ngFor="let user of users">
+      {{user.name}} ({{user.age}})
+    </div>
+  </div>
+</div>

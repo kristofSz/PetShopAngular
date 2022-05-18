@@ -1,0 +1,41 @@
+.input-wrapper {
+  margin: 150px auto;
+  text-align: center;
+}
+
+.label-exotic {
+  padding-right: 10px;
+  font-weight: bold;
+  color: white;
+}
+
+.control-button {
+  margin: 10px auto;
+  min-width: 150px;
+  background: #5C6078;
+}
+
+.editor-container {
+  display: flex;
+  justify-content: flex-end;
+  border: 1px solid white;
+  border-radius: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-image: url("./images/editorhatter.jpg");
+  box-shadow: 3px 3px 3px 3px white;
+}
+
+.input {
+  margin: 15px;
+  text-transform: uppercase;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.control-button {
+  text-transform: uppercase;
+}

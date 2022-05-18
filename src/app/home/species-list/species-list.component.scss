@@ -1,0 +1,213 @@
+.list-container {
+  max-width: 350px;
+  max-height: 350px;
+  overflow: auto;
+  float: left;
+  margin-bottom: 15px;
+  margin-left: 15px;
+}
+
+.list-wrapper {
+  padding:0 10px;
+}
+
+.paw-icon {
+  float: right;
+}
+
+.species-item {
+  text-align: center;
+  padding: 10px;
+  margin: 4px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  background: #94D8EE;
+  letter-spacing: 2px;
+  transition: 0.5s;
+  &:hover {
+    color: #f84860;
+    cursor: pointer;
+  }
+  button {
+    float: right;
+  }
+}
+
+.border-animation {
+  display: block;
+  position: absolute;
+  background: #f84860;
+}
+
+.border-animation:nth-child(1){
+  left: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+}
+
+.species-item:hover .border-animation:nth-child(1){
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+}
+
+.border-animation:nth-child(2){
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+
+.species-item:hover .border-animation:nth-child(2){
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+}
+
+.border-animation:nth-child(3){
+  right: 0;
+  bottom: 0;
+  width: 3px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.species-item:hover .border-animation:nth-child(3){
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.border-animation:nth-child(4){
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.species-item:hover .border-animation:nth-child(4){
+  transform: scaleX(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+  transition-delay: 0.5s;
+}
+
+.selected {
+  background: #D5D9DE;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.img1 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/monkey.png");
+}
+
+.img2 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/dog.png");
+}
+
+.img3 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/cat.png");
+}
+
+.img4 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/lion.png");
+}
+
+.img5 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/spider.png");
+}
+
+.img6 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/pig.png");
+}
+
+.img7 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/parrot.png");
+}
+
+.img8 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/bat.png");
+}
+
+.img9 {
+  height: 100px;
+  width: 100px;
+  background-image: url("./images/mouse.png");
+}
+
+.card-middle {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: space-evenly;
+  justify-content: space-evenly;
+  height: 350px;
+  width: 650px;
+}
+
+.in-stock-card {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.pets-title {
+  margin-top: 50px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 40px;
+  color: #94D8EE;
+}
+
+.img-title {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  border: 3px solid white;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 2px white;
+}
+
+.pets-in-stock-card {
+  border: 1px solid whitesmoke;
+  border-radius: 30px;
+  background-image: url("./images/specieslisthatter.jpg");
+  box-shadow: 3px 3px 3px 3px white;
+}
